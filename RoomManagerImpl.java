@@ -59,7 +59,7 @@ public class RoomManagerImpl extends java.rmi.server.UnicastRemoteObject impleme
 							          RoomManagerImpl.room2 = RoomManagerImpl.room2 - 1;
             						RoomManagerImpl.map.put("type_2",room_2);
             						return "Booked room of type_2";	
-						}else{
+						}else{ 
 						//Loop through the map incase it's not empty
 						for (Map.Entry<String, List<String>> entry : map.entrySet()) {
             			

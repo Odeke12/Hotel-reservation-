@@ -1,4 +1,5 @@
 import java.rmi.*; 
+import java.util.*;
 
 public interface RoomManager extends Remote{
 	public String book(String a, String b)
@@ -7,7 +8,7 @@ public interface RoomManager extends Remote{
 	public String list()
 		throws RemoteException;
 
-	public String guests()
+	public List<String> guests()
 		throws RemoteException; 
 
 	public String revenue()
